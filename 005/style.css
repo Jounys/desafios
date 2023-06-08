@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+  }
+  
+  .container {
+   /* width: 400px;*/
+    display: flex; /*Inicializar tudo*/
+    flex-direction: row; /*Eixo principal */
+    justify-content: center; /* Centalizando o eixo principal */
+    align-items: center; /*alinhameto vertical*/
+    flex-wrap: nowrap; /*responsividade da tela para quebrar a linha e descer para linha de baixo*/
+    align-content: center; /*centralizar mais de uma linha */
+    row-gap: 10px; /* Espaçamento entre os blocos*/
+    column-gap: 30px; /* Espaçamento entre colunas*/
+  
+    /* indiferente: */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+  }
+
+  .bloco-1, .bloco-2, .bloco-3 {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+  }
+  
+  .bloco-1 { 
+    order: 0; /* Ordena da forma que for definidas*/
+    flex-grow: 0; /* Vai crescer usando todo o espaço disponível*/
+    flex-shrink: 1; /* Encolhe os blocos*/
+    flex-basis: auto; /* Define o tamanho dos itens*/
+    flex: 0 1 auto; /* HandShot 'ajudinha'*/
+    align-self: flex-start; /* Altera sua verticalidade independentemente*/
+  
+    background-color: #c6d8f0;
+  }
+
+  .bloco-2 {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    align-self: flex-end;
+
+    background-color: #d8bfd8;
+  }
+
+  .bloco-3 {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    align-self: center;
+
+    background-color: #ff9999;
+  }
+  
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0px;
+        height: 0px;
+        }
+
+        body {
+            background-image: url(img/blob-scene-haikei.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 140px;
+            width: 100%;
+            
+            position: fixed;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .box {
+            background-color: aliceblue;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            left: 50px;
+        }
+
+        .rotate-center {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid black;
+            -webkit-animation: rotate-center 0.6s ease-in-out both;
+            animation: rotate-center 0.6s ease-in-out both;
+            position: relative;
+            left: 80%;
+        }
+
+        @-webkit-keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        }
+        @keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+    
+    <img src="img/joao.jpg" alt="">
+
+    <div class="rotate-center">
+        
+    </div>
+
+</body>
+</html>
